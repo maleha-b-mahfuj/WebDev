@@ -1,0 +1,185 @@
+body {
+    background-image: url("photos/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+div#boxes {
+    width: 80%;
+    margin: 5% auto;
+}
+
+div#SignInbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 40%;
+    height: 70%;
+    padding: 5%;
+    z-index: 1;
+    opacity: 1;
+    background-image: url("photos/welcome2.jpg");
+    color: white;
+}
+
+#SignInbox #close{
+    position: absolute;
+    top: 0; 
+    right: 0;
+    background: none; 
+    border: none; 
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+
+div#rightbox {
+    float: left;
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 2%;
+}
+
+#rightbox i {
+    position: absolute;
+    margin: 5.5% 4%;
+}
+
+.signUp {  
+    float: right;
+    border: none; 
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#SignInbox #inputField i{
+    position: absolute;
+    margin: 5% 3.4%;
+}
+
+div#leftbox {
+    background-image: url("photos/back3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 98%;
+    float: left;
+    width: 60%;
+    height: 80%;
+    padding: 5% 5% 24.5%;
+    color:black;
+    text-align: center;
+    border-radius: 2%;
+}
+
+div#leftbox p {
+    font-size: larger;
+}
+
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+
+input {
+    width: 100%;
+    border: 2px solid lightslategray;
+    width: 100%;
+    padding: 12px 35px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    font-size: medium;
+}
+
+
+.in {
+    width: 100%;
+    background-image: url("photos/welcome2.jpg");;
+    color: whitesmoke;
+    opacity: 80%;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.newIn {
+    background-color: #1e263d;
+    width: 100%;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#inputField {
+    position: relative;
+}
+
+.show{
+    visibility: hidden;
+    position:absolute;
+    background: none;
+    border: none;
+    right: 0;
+    padding: 6% 4%;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.show:hover{
+    color: grey;
+}
+
+#alt {
+    text-align: center;
+    font-size:16px;
+}
+
+button:disabled {
+    cursor: auto;
+    background-color: lightslategray;
+}
+
+div#error, #newError{
+    color:red;
+    font-size: medium;
+    text-align: center;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}

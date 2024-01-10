@@ -1,0 +1,47 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(rgb(221, 231, 229), rgb(255, 255, 255) );
+    padding: 30px;
+}
+header {
+    background-image: linear-gradient(rgb(48, 77, 59), rgb(51, 75, 66) );
+    overflow: hidden;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+header a.active {
+    background-color: rgb(247, 175, 93);
+    color: white;
+    border: none;
+}
+
+header p {
+    padding: 0px 12px;
+    float: left;
+    color: rgb(253, 233, 211);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    display: block;
+}
+
+#search {
+    float:right;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+div#error{
+    color:red;
+    font-size: smaller;
+}

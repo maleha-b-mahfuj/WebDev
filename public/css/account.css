@@ -1,0 +1,206 @@
+body {
+    background-image: url("photos/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 30px;
+}
+
+header {
+    background-color:rgb(83, 7, 45);
+    overflow: hidden;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+header p {
+    padding: 0px 12px;
+    float: left;
+    color: rgb(253, 233, 211);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    display: block;
+}
+
+
+#search {
+    float:right;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+#searchButton:disabled {
+    cursor: none;
+}
+
+#searchButton:enabled{
+    background-color: #19193a;
+    color: white;
+}
+
+header input {
+    font-size: 17px;
+    padding: 6px;
+    border: none;
+    border-radius: 1px;
+}
+
+header button {
+    font-size: 17px;
+    padding: 6px;
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+
+}
+
+header a:hover {
+    background-color: #19193a;
+    color: white;
+}
+  
+header a.active {
+    background-color: #19193a;
+    color: white;
+    border: none;
+}
+
+#column {
+    float: left;
+    padding: 15px;
+}
+
+#type{
+    float: right;
+    padding: 10px;
+    font-size: 15px;
+    color:rgb(48, 77, 59);
+    border-radius: 10px;
+    background-color: rgb(250, 228, 186);
+    border-color: rgb(221, 231, 229);
+    cursor: pointer;
+
+}
+
+h2 {
+    font-size: 30px;
+}
+div#post {
+    display: block;
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+div.like {
+    width: 60%;
+    display: block;
+    background-image: linear-gradient(rgb(48, 77, 59), rgb(51, 75, 66) );
+    border-radius: 10px;
+}
+
+div.right {
+    width:35%;
+    display: block;
+    border: green;
+}
+
+#following {
+    display: block;
+    background-image: linear-gradient(rgb(247, 175, 93),rgb(204, 138, 63) );
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+#following a {
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+    color: rgb(4, 70, 66);
+    border-radius: 3px;
+}
+
+
+h3 {
+    color: rgb(253, 233, 211);
+    text-transform: uppercase;
+}
+
+#post p {
+    color:rgb(4, 70, 66);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.but {
+    background-color: rgb(175, 92, 92);
+    cursor: pointer;
+    border: rgb(153, 80, 80);
+    padding: 11px;
+    color: white;
+}
+
+.dislike {
+    float: right;
+    background-color: lightcoral;
+    cursor: pointer;
+    border: rgb(192, 102, 102);
+    padding: 8px;
+    color: white;
+}
+
+#reviews {
+    background-color: rgba(148, 133, 133, 0.562);
+    padding: 30px;
+    border-radius: 3px;
+}
+
+#reviews button {
+    background-color: lightcoral;
+    cursor: pointer;
+    border: rgb(192, 102, 102);
+    padding: 9px;
+    color: white;
+
+}
+
+#reviews a {
+    background-color: rgba(52, 56, 50, 0.507);
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+#reviews h3{
+    color: rgb(4, 70, 66);
+}
+
+img {
+    width:100%;
+    height:50%;
+    object-fit: cover;
+}
+
+#notifi {
+    background-color: rgba(202, 96, 96, 0.87);
+    padding: 30px;
+    border-radius: 3px;
+}
+
+#notifi p {
+    background-color: rgba(216, 193, 193, 0.87);
+    padding: 20px;
+    border-radius: 10px;
+}

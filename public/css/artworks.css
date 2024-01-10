@@ -1,0 +1,117 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(rgb(221, 231, 229), rgb(255, 255, 255) );
+    padding: 30px;
+}
+
+header {
+    background-image: linear-gradient(rgb(48, 77, 59), rgb(51, 75, 66) );
+    overflow: hidden;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    display: block;
+}
+
+#reviewButton {
+    padding: 10px;
+    background-color: rgba(241, 180, 65, 0.637);
+    cursor: pointer;
+    color: black;
+    border: rgb(192, 102, 102);
+}
+
+.but {
+    background-color: rgba(160, 240, 128, 0.603);
+    cursor: pointer;
+    border: rgb(192, 102, 102);
+    padding: 8px;
+    color: black;
+    margin: 2px;
+}
+
+
+#main input {
+    padding: 8px;
+    font: 10px;
+    width: 90%;
+    height: 7%;
+}
+
+#search {
+    float:right;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+header input {
+    font-size: 17px;
+    padding: 6px;
+    border: none;
+    border-radius: 1px;
+}
+
+header button {
+    font-size: 17px;
+    padding: 6px;
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+
+}
+
+header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+header a.active {
+    background-color: rgb(247, 175, 93);
+    color: white;
+    border: none;
+}
+
+#main{
+    display: block;
+    border-radius: 10px;
+}
+
+#cat{
+    background-image: linear-gradient(rgb(48, 77, 59), rgb(51, 75, 66) );
+    padding: 0px 20px;
+}
+.med{
+    padding: 8px 10px;
+    background-color: rgb(250, 217, 178);
+    border-radius: 8px;
+    border: 4px solid rgb(48, 77, 59);
+}
+
+img {
+    width:100%;
+    height:70%;
+    object-fit: cover;
+}
+
+h3 {
+    color: rgb(245, 233, 219);
+    padding: 20px 0px;
+    text-transform: uppercase; 
+    font-size: 25px;
+}
+
+h5 {
+    color: rgb(48, 77, 59);
+    text-transform: uppercase; 
+    font-size: 18px;
+}
