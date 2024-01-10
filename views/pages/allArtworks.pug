@@ -1,0 +1,39 @@
+html(lang='en')
+  head
+    title Art Database
+    link(rel="stylesheet" href="/css/artworks.css")
+  body(id=user.username)
+    header 
+      a(href="/logIn/" + user.username) Homepage
+      a.active(href= "/" + user.username + "/art") All Artworks
+      div#search
+        input#searchText(type="text" placeholder="Search.." onkeyup = "enableButton()")
+        button#searchButton(type="button" disabled onclick="searchButton()") Submit
+    h2 All artworks 
+    div#main
+      each medium, category in list.cat
+          div#Cat
+            h3 Category: #{category}
+            each mediums, key in medium
+                each value, item in mediums
+                    div.med
+                      h5 Medium: #{item}
+                      each art in value
+                          div(id=art._id)
+                              p #{art.name}:
+                              a(href= "/" + user.username + "/art/" + art._id)
+                                  img(src=art.image)
+                              br
+                              br
+                              input#review(type="text" placeholder= "Write a review...")
+                              button(type="button" id="reviewButton" onclick="reviewed()") submit review  
+                              br 
+
+                              button(type="button" onclick="likeArt()" class="but") like
+                              
+                              button(type="button" id=art.artist class="but" onclick="followArtist()") follow
+                            
+                        
+            br              
+             
+    script(src="/likeAndFollow.js")

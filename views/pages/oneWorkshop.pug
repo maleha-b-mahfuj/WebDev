@@ -1,0 +1,24 @@
+html(lang='en')
+  head
+    title Add Artwork
+    link(rel="stylesheet" href="/css/addStuff.css")
+  body(id=user.username)
+    header 
+        a(href="/logIn/" + user.username) Homepage
+        a(href= "/" + user.username + "/art") All Artworks
+        a(href="/" + user.username + "/addArtwork") Add Artwork
+        a.active(href="/" + user.username + "/addWorkshop") Add Workshop
+        div#search
+          input#searchText(type="text" placeholder="Search.." onkeyup = "enableButton()")
+          button#searchButton(type="button" disabled onclick="searchButton()") Submit
+    h2 #{list.title}
+    p By 
+        a(href= "/" + user.username +  "/artist/" + list.artist) #{list.artist}
+    p Enrolled Users:
+        ul
+            if list.enroll.length > 0
+                each item in list.enroll
+                    li #{item}
+            else 
+                li No one has enrolled yet!
+    

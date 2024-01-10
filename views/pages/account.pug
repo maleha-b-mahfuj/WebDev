@@ -1,0 +1,85 @@
+html(lang='en')
+  head
+    title Homepage
+    link(rel="stylesheet" href="/css/account.css")
+  body
+    header
+      if list.type
+        p ARTIST
+        a(href="/" + list.user + "/addArtwork") Add Artwork
+        a(href="/" + list.user + "/addWorkshop") Add Workshop
+      else
+        p PATRON
+      a.active(href="/logIn/" + list.user) Home
+      a(href= "/" + list.user + "/art") All Artworks
+      div#search
+        input#searchText(type="text" placeholder="Search.." onkeyup = "enableButton()")
+        button#searchButton(type="button" disabled onclick="searchButton()") Submit
+    br
+    if list.type
+      button#type(type="button" onclick="patron()") Back To Patron
+      br
+    else
+      button#type(type="button" onclick="upgrade()") Upgrade To Artist
+      br
+    h2 Welcome #{list.user}!
+    div.like#column
+      h3 Likes
+      if list.ratings.length === 0
+        p you have liked nothing
+      else
+        each item in list.ratings
+          div#post
+            p #{item.name} by #{item.artist}
+            a(href= "/" + list.user + "/art/" + item._id)
+              img(src=item.image)
+            br
+            br
+            button.dislike(type="button" id=item._id onclick="unLikeArt()") Dislike
+            br
+          br
+    div.right#column
+      br
+      br
+      br
+      div#following
+        h3 Following
+        if list.artists.length === 0
+          p You are following no one
+        else
+          each item in list.artists
+            a(href= "/" + list.user + "/artist/" + item) #{item}
+            button.but(type="button" id=item onclick="unfollowArt()") Unfollow
+            br  
+            br
+      br
+      div#reviews
+        h3 Reviews
+        if list.reviews.length === 0
+          p You have not reviewed anything
+        else
+          each item in list.reviews
+            each value, key in item
+              div(id=key)
+                if value.length !== 0
+                  each review in value
+                    a(href= "/" + list.user + "/art/" + key) #{review}
+                    button(type="button" id=review onclick="removeReview()") Remove Review
+                    br
+                    br
+                else 
+                    a(href= "/" + list.user + "/art/" + key) #{value}
+                    button(type="button" id=value onclick="removeReview()") Remove Review
+                    br
+                    br
+      br
+      div#notifi
+        h3 Notifications 
+        if list.notifications.length === 0
+          p You have received zero notifications 
+        else 
+          each item in list.notifications 
+            p #{item}
+      div#query 
+
+  script(src="/mainAccount.js")

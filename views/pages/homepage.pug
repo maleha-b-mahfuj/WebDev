@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+  head
+    title Gallery - Sign In
+    link(rel="stylesheet" href="/css/signIn.css")
+    script(src="https://kit.fontawesome.com/74ee35fb83.js" crossorigin="anonymous")
+  body
+
+    div#SignInbox 
+      h1 Create Your Account
+      div#inputField
+        i(class='fa-solid fa-user')
+        input#newUser(type="text", name="newUser" onkeyup = "newEnableButton()" placeholder="Username")
+      br
+      div#inputField
+        i(class='fa-solid fa-lock')
+        input#newPass(type="password", name="newPass" onkeyup = "newEnableButton()" placeholder="Password")
+      br
+      button(type="button" disabled class="newIn" onclick="createAccount()") Sign Up
+      button#close(type="button" onclick="closeForm()") 
+        i(class="fa fa-close")
+      div#newError
+      br
+
+    div#boxes 
+      div#leftbox
+        h1 Welcome to the 
+          br
+          i Gallery!
+        p Share your creations with the world today!
+      div#rightbox
+        h1 Login
+        br
+        div#inputField
+          i(class='fa-solid fa-user')
+          input#user(type="text", name="user" onkeyup = "enableButton()" placeholder = "Username")
+        div#inputField
+          i(class='fa-solid fa-lock')
+          input#password(type="password", name="password" onkeyup = "enableButton()" placeholder = "Password")
+          button(class="show" type="button" onclick="showPassword()") Show
+        button(type="button" disabled class="in" onclick="findAccount()") LOGIN
+        br
+        br
+        button(type="button" class="signUp" onclick="openForm()") Create New Account
+        br
+        br
+        div#error
+        //div#alt
+          p Don't have an account? 
+            a(href="/signup") Sign up
+        br 
+        br
+        br#toggle
+    script(src="/findAccount.js")
+
+    

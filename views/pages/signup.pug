@@ -1,0 +1,21 @@
+html(lang='en')
+  head
+    title Sign Up
+    link(rel="stylesheet" href="/css/signIn.css")
+  body
+    div#SignInboxx
+      h1 Gallery
+      h2 Create your account 
+      label(for="user") Username 
+      input#user(type="text", name="user" onkeyup = "enableButton()" placeholder="Enter a username..")
+      br
+      label(for="password") Password 
+      input#password(type="text", name="password" onkeyup = "enableButton()" placeholder="Enter a password..")
+      br
+      button(type="button" disabled class="in" onclick="createAccount()") Sign Up
+      div#error
+    br
+    div#alt
+      p Have an account? 
+        a(href="/") Sign in
+    script(src="/findAccount.js")
